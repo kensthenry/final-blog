@@ -9,3 +9,13 @@
 </ul>
 
 <%= link_to "New Article", new_article_path %>
+
+<h1 class="display-1">Lets go shopping! Goods coming soon!</h1>
+
+There are <%= @product.count %> products!!
+<ul>
+<% @products.each do |product| %>
+    <li><%=product.name%>: <%= product.price %></li>
+    <%= link_to "Buy Now", buy_path(product), class: "btn btn-primary"%>
+<% end %>
+</ul>

@@ -9,7 +9,19 @@
                     turbo_confirm: "Are you sure?"
                   } %></li>
 </ul>
-
+<div class="alert alert-warning">
+  <strong>WARNING!</strong> Read this message and proceed with caution</a>.
+</div>
+class Product < ApplicationRecord
+    validates :name, presence: true
+    validates :price, comparison: {greater_than: 0}
+end
+<h1>Your Cart: </h1>
+<ul>
+<% @cart.each do |product| %>
+    <li><%=product["name"]%></li>
+<% end %>
+</ul>
 <h2>Comments</h2>
 <%= render @article.comments %>
 

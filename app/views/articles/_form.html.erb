@@ -17,6 +17,10 @@
 
 <div>
   <%= form.label :status %><br>
+  <button class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+  </button>
   <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
 </div>
 
