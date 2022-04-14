@@ -1,12 +1,27 @@
-<h1> class="display-1">Never stop shopping! More goods coming soon!</h1>
-
-There are <%= @product.count %> products!!
-<ul>
-<% @products.each do |product| %>
-    <li><%=product.name%>: <%= product.price %></li>
-    <%= link_to "Purchase Right Now!", buy_path(product), class: "btn btn-primary"%>
-<% end %>
-</ul>
-
-<h2> Your shopping cart has <%=@cart.length%> items</h2>
-<%= link_to "Check Out", checkout_path%>
+<html style="background-color:rgb(204, 142, 83)"></html>
+<h1 style="width: 155px; margin: 0 auto; background-color: #7aa89d; padding: 0 20px 20px 20px; border: 5px solid black;"> My Family </h1>
+<p> 
+    <h2>MY SIBLINGS</h2> 
+    <ul>
+    <li>Kaylee, 20 years old.</li> 
+    <img src = "KAYLEE.JPG" width="250" height="250">
+    <li>Kasella, 15 years old. </li>
+    <img src = "kasella&me.jpg" width="350" height="200">
+    <li>Canaan, 2.5 months old. </li>
+    </ul>
+</p>
+<p> 
+    <h2>MY PARENTS</h2> 
+    <ul>
+    <li>Erika, Mother, 43 years old.</li> 
+    <img src = "the mother.jpg" width="200" height="200">
+    <li>Tommy, Father, 41 years old. </li>
+    </ul>
+</p>
+<p> 
+    <h2>MY PETS</h2> 
+    <ul>
+    <li>Charlie Brown, GoldenDoddle, not sure of age.</li> 
+    <img src = "me1.jpg" width="350" height="200">
+    </ul>
+</p>
