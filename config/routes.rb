@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
     
-    get "/henryblog", to: "articles#edit"
+    get "/blog", to: "articles#show"
 
 end
